@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Obrigado pela compra | SESAU Rondônia</title>
+<meta name="description" content="Página de obrigado do preparatório SESAU Rondônia com acesso à plataforma de estudos." />
+<meta property="og:image" content="assets/hero.jpg" />
+<meta name="theme-color" content="#d60000" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#05080f;--line:rgba(255,255,255,.10);--text:#f7f8fb;--muted:#aab3c6;--red:#ff2a2a;--yellow:#ffd23f;--blue:#32b6ff;--shadow:0 22px 70px rgba(0,0,0,.45);--radius:24px;--max:1180px}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;color:var(--text);background:radial-gradient(circle at 15% 0%, rgba(255,42,42,.12), transparent 25%),radial-gradient(circle at 85% 10%, rgba(50,182,255,.10), transparent 26%),linear-gradient(180deg, #05080f 0%, #070c13 40%, #05080f 100%);overflow-x:hidden}
+a{text-decoration:none;color:inherit} img{display:block;max-width:100%}
+.container{width:min(1180px, calc(100% - 28px));margin:0 auto}
+.top-bar{position:sticky;top:0;z-index:300;background:linear-gradient(90deg,#790000,#ff2a2a,#790000);box-shadow:0 10px 30px rgba(255,0,0,.28);border-bottom:1px solid rgba(255,255,255,.10);padding:10px 14px;text-align:center;font-weight:900;font-size:.95rem;letter-spacing:.4px;text-transform:uppercase}
+.top-bar span{color:var(--yellow)}
+.ticker{overflow:hidden;white-space:nowrap;border-bottom:1px solid rgba(255,255,255,.08);border-top:1px solid rgba(255,255,255,.05);background:#0a0f18}
+.ticker-track{display:inline-block;min-width:200%;animation:ticker 20s linear infinite;padding:12px 0;font-size:.92rem;font-weight:900;text-transform:uppercase}
+.ticker-track span{margin:0 22px;color:var(--yellow)}
+@keyframes ticker {from{transform:translateX(0)} to{transform:translateX(-50%)}}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:36px 0 70px}
+.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:30px;align-items:center}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;padding:10px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);font-size:.85rem;font-weight:900;text-transform:uppercase;box-shadow:var(--shadow);backdrop-filter: blur(10px)}
+.hero h1{font-family:Anton, Inter, sans-serif;text-transform:uppercase;letter-spacing:.5px;line-height:.94;margin:16px 0 14px;font-size:clamp(3rem, 7vw, 6.2rem);text-shadow:0 10px 30px rgba(255,42,42,.15)}
+.hero h1 .yellow{color:var(--yellow)}
+.hero p{font-size:clamp(1rem, 1.5vw, 1.18rem);line-height:1.75;color:#eef3ff;max-width:650px;margin:0 0 14px}
+.hero-points{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0 24px}
+.hero-points .point{padding:11px 14px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);font-weight:800;color:#fff}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:24px}
+.btn,.btn-ghost,.floating-cta{border-radius:18px;font-weight:900;display:inline-flex;justify-content:center;align-items:center;transition:transform .22s ease, box-shadow .22s ease;cursor:pointer}
+.btn:hover,.btn-ghost:hover,.floating-cta:hover{transform:translateY(-2px)}
+.btn{min-height:60px;padding:18px 28px;color:#fff;background:linear-gradient(180deg,#ff3f3f,#c10000);border:1px solid rgba(255,255,255,.14);box-shadow:0 18px 44px rgba(255,0,0,.32);position:relative;overflow:hidden}
+.btn::after{content:"";position:absolute;top:0;left:-130%;width:60%;height:100%;background:linear-gradient(90deg, transparent, rgba(255,255,255,.25), transparent);transform:skewX(-22deg);animation:shine 3s infinite}
+@keyframes shine{0%{left:-130%}35%{left:150%}100%{left:150%}}
+.btn-ghost{min-height:60px;padding:18px 22px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);color:#fff;backdrop-filter: blur(10px)}
+.micro-proof{margin-top:10px;color:var(--muted);font-size:.95rem}
+.inline-alert{display:inline-flex;margin-top:14px;padding:10px 14px;border-radius:999px;background:rgba(255,42,42,.10);border:1px solid rgba(255,42,42,.22);color:#fff;font-weight:800;font-size:.9rem;box-shadow:0 12px 30px rgba(255,0,0,.18)}
+.hero-media{position:relative;border-radius:30px;overflow:hidden;border:1px solid rgba(255,255,255,.12);background:#0a1018;box-shadow:0 30px 80px rgba(0,0,0,.55);animation:floaty 5s ease-in-out infinite}
+.hero-media img{width:100%;min-height:640px;object-fit:cover}
+.hero-media::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,.03), rgba(0,0,0,.30)),radial-gradient(circle at 15% 20%, rgba(255,42,42,.10), transparent 28%),radial-gradient(circle at 85% 10%, rgba(50,182,255,.12), transparent 26%);pointer-events:none}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+section{padding:78px 0}
+.section-title{max-width:860px;text-align:center;margin:0 auto 28px}
+.section-title h2{font-size:clamp(2rem, 4vw, 3.15rem);line-height:1.05;margin:0 0 12px;font-weight:900}
+.section-title p{margin:0;color:var(--muted);line-height:1.75}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{border-radius:24px;border:1px solid rgba(255,255,255,.10);background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));box-shadow:0 22px 70px rgba(0,0,0,.45)}
+.card-pad{padding:24px}
+.card h3{margin:0 0 10px;font-size:1.14rem}
+.card p{margin:0;color:var(--muted);line-height:1.72}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.step-num{width:42px;height:42px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#ff3f3f,#b70000);font-weight:900;margin-bottom:14px;box-shadow:0 12px 24px rgba(255,0,0,.22)}
+.login-box{max-width:940px;margin:0 auto;text-align:center;padding:32px;border-radius:32px;border:1px solid rgba(255,255,255,.12);background:radial-gradient(circle at top right, rgba(255,42,42,.16), transparent 28%),radial-gradient(circle at bottom left, rgba(50,182,255,.13), transparent 25%),linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));box-shadow:0 34px 90px rgba(0,0,0,.55)}
+.cred-grid{margin:24px 0;display:grid;grid-template-columns:repeat(2,1fr);gap:12px;text-align:left}
+.cred-item{padding:16px;border-radius:16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)}
+.cred-item strong{display:block;margin-bottom:6px}
+.big-code{display:block;font-size:1.35rem;font-weight:900;color:var(--yellow);word-break:break-word}
+.notice{margin-top:16px;color:#fff;font-weight:700;line-height:1.7}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease, transform .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+footer{padding:42px 0 110px;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,.08)}
+.floating-cta{position:fixed;z-index:250;right:16px;bottom:16px;min-width:290px;max-width:calc(100% - 32px);min-height:62px;padding:16px 20px;color:#fff;background:linear-gradient(180deg,#ff3f3f,#b70000);border:1px solid rgba(255,255,255,.14);box-shadow:0 18px 44px rgba(255,0,0,.34);animation:pulse 1.35s infinite}
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.035)}100%{transform:scale(1)}}
+@media (max-width: 980px){.hero{min-height:auto}.hero-grid,.grid-3,.steps,.cred-grid{grid-template-columns:1fr}.hero-media img{min-height:auto}.cta-row{flex-direction:column}.btn,.btn-ghost{width:100%}.floating-cta{left:16px;right:16px;min-width:auto}}
+</style>
+</head>
+<body>
+<div class="top-bar">✅ Compra confirmada com sucesso</div>
+<div class="ticker" aria-hidden="true"><div class="ticker-track"><span>Acesso liberado</span><span>Plataforma de estudos</span><span>Use seu Gmail</span><span>Senha: jr2026</span><span>SESAU Rondônia</span><span>Acesso imediato</span><span>Acesso liberado</span><span>Plataforma de estudos</span><span>Use seu Gmail</span><span>Senha: jr2026</span><span>SESAU Rondônia</span><span>Acesso imediato</span></div></div>
+
+<header class="hero">
+  <div class="container hero-grid">
+    <div class="reveal">
+      <div class="eyebrow">🎉 Página de obrigado</div>
+      <h1>OBRIGADO PELA<br><span class="yellow">SUA COMPRA</span></h1>
+      <p>Seu acesso já está liberado. Agora é só entrar na plataforma e começar seus estudos no preparatório da SESAU Rondônia.</p>
+      <div class="hero-points">
+        <div class="point">✅ Acesso imediato</div>
+        <div class="point">✅ Plataforma liberada</div>
+        <div class="point">✅ Estudo no celular</div>
+        <div class="point">✅ Material completo</div>
+      </div>
+      <div class="cta-row">
+        <a class="btn" href="https://sesau-certo.vercel.app/" target="_blank" rel="noopener noreferrer">ACESSAR PLATAFORMA AGORA</a>
+        <a class="btn-ghost" href="#login">VER DADOS DE ACESSO</a>
+      </div>
+      <div class="micro-proof">Entre usando seu Gmail e a senha informada abaixo.</div>
+      <div class="inline-alert">⚠️ Importante: use o seu Gmail no login para acessar seus estudos.</div>
+    </div>
+    <div class="hero-media reveal"><img src="assets/hero.jpg" alt="Acesso liberado ao preparatório SESAU Rondônia"></div>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <h2>Como acessar seu curso</h2>
+      <p>Siga esse passo a passo simples para entrar na plataforma sem erro.</p>
+    </div>
+    <div class="steps">
+      <div class="card card-pad reveal">
+        <div class="step-num">1</div>
+        <h3>Clique no botão de acesso</h3>
+        <p>Use o botão desta página para abrir a plataforma oficial do curso.</p>
+      </div>
+      <div class="card card-pad reveal">
+        <div class="step-num">2</div>
+        <h3>Digite seu Gmail</h3>
+        <p>No campo de login, coloque o seu Gmail corretamente para identificar seu acesso.</p>
+      </div>
+      <div class="card card-pad reveal">
+        <div class="step-num">3</div>
+        <h3>Use a senha informada</h3>
+        <p>Digite a senha <strong style="color:#fff">jr2026</strong>, entre na plataforma e comece a estudar agora mesmo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="login" style="padding-top:20px">
+  <div class="container">
+    <div class="login-box reveal">
+      <div class="eyebrow" style="margin-bottom:12px">🔐 Dados de acesso</div>
+      <h2 style="margin:0 0 10px; font-size:clamp(2rem,4vw,3.3rem)">Seus dados para login</h2>
+      <p style="color:var(--muted); max-width:700px; margin:0 auto 14px; line-height:1.75">Guarde essas informações. Elas são necessárias para entrar na plataforma de estudos.</p>
+      <div class="cred-grid">
+        <div class="cred-item">
+          <strong>Link da plataforma</strong>
+          <span class="big-code">sesau-certo.vercel.app</span>
+        </div>
+        <div class="cred-item">
+          <strong>Senha de acesso</strong>
+          <span class="big-code">jr2026</span>
+        </div>
+      </div>
+      <p class="notice">✅ No login, a pessoa deve colocar o próprio Gmail e usar a senha <strong style="color:var(--yellow)">jr2026</strong> para entrar e estudar.</p>
+      <div class="cta-row" style="justify-content:center">
+        <a class="btn" href="https://sesau-certo.vercel.app/" target="_blank" rel="noopener noreferrer" style="width:min(100%,560px)">ENTRAR NA PLATAFORMA</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title reveal">
+      <h2>Orientações importantes</h2>
+      <p>Essas informações ajudam a reduzir dúvidas e deixam sua página de obrigado mais clara.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card card-pad reveal">
+        <h3>Use o Gmail correto</h3>
+        <p>Peça para a pessoa digitar o Gmail dela certinho, sem erro, para facilitar o acesso.</p>
+      </div>
+      <div class="card card-pad reveal">
+        <h3>Salve a senha</h3>
+        <p>A senha inicial para entrar na plataforma é <strong style="color:#fff">jr2026</strong>.</p>
+      </div>
+      <div class="card card-pad reveal">
+        <h3>Comece a estudar na hora</h3>
+        <p>Assim que entrar, a pessoa já pode acessar o conteúdo e iniciar a preparação.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>JR Apostilas • Página de Obrigado • SESAU Rondônia</footer>
+<a class="floating-cta" href="https://sesau-certo.vercel.app/" target="_blank" rel="noopener noreferrer">ACESSAR PLATAFORMA</a>
+
+<script>
+const reveals = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+      io.unobserve(entry.target);
+    }
+  });
+}, {threshold: 0.12});
+reveals.forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
